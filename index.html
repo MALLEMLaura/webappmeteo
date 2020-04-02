@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="UTF-8" />
+  <link
+      href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+
+  <link rel="stylesheet" href="src/styles.css" />
+  
+</head>
+
+<body>
+    
+  <!-- header -->
+  <div class="max-w-7xl mx-auto px-2 sm:px-6 lg:px-8 bg-gray-500">
+    <div class="relative flex items-center justify-between h-16">
+      <div class="flex-1 flex items-center justify-center sm:items-stretch sm:justify-start">
+        <div class="flex flex-shrink-0">
+          <img class="block lg:hidden h-8 w-auto" src="assets/clouds.png" alt="" />
+          <a class="ml-0 px-3 py-1 font-semibold block lg:hidden" >Weather</a>
+          <img class="hidden lg:block h-8 w-auto" src="assets/clouds.png" alt="" />
+          <a class="ml-0 px-3 py-1 font-semibold hidden lg:block" >Weather</a>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+
+
+  <div class="">
+    <div class="">
+      <div class="grid grid-cols-1 md:grid-cols-2 ">
+
+        <!-- liste selecteur-->
+        <div class=" bg-gray-800">
+          <div class="mt-20 text-center font-bold text-4xl lg:text-5xl lg:mt-32">
+            <label for="selectCity">Choose a city: </label>
+          </div>
+
+          <div class="mt-12 text-center text-lg lg:text-xl lg:mt-16">
+                <select name="ville" size="1" id="selectCity">
+                  <option value="2968815">Paris</option>
+                  <option value="2643743">London</option>
+                  <option value="3117735">Madrid</option>
+                  <option value="2950159">Berlin</option>
+                  <option value="1850147">Tokyo</option>
+                </select>
+       
+          </div>
+
+          <div class="mt-8 mb-16 text-center text-lg lg:mt-16 lg:mb-32 lg:text-2xl">
+            <button id="refresh" onclick="Refresh()">Research</button>
+          </div>
+        </div>
+
+
+
+        <!-- weather -->
+        <div id="Background" class="bg-fixed md:bg-local">
+          <div id="weather">
+            <div>
+            <div id="location" class="text-center"></div>
+            <div id="description" class="text-center"></div>
+            <div id="temp" class="text-center"></div>
+            <div id="temp_feel" class="text-center"></div>
+            <div id="temp_min" class="text-center"></div>
+            <div id="temp_max" class="text-center"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+ 
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- main day -->
+  <div>
+    
+
+  </div>
+
+
+  <!-- slider -->
+  <div>
+    
+  </div>
+
+
+    <script src="src/index.js"></script>
+</body>
+</html>
